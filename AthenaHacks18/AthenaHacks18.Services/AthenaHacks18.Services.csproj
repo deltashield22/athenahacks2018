@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAuthenticationService.cs" />
     <Compile Include="Interfaces\IWordsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\IIdentityExtensions.cs" />
     <Compile Include="WordsService.cs" />
   </ItemGroup>
   <ItemGroup />
