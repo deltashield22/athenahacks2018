@@ -9,17 +9,25 @@ class Register extends React.PureComponent {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
-    onSubmit(e) {
-        let formData = e.formData;
+    onSubmit(r) {
+        let formData = r.formData;
         //service call to send formData to database
-        //.then(() => location.href("/dashboard"))
+        //.then(() => location.href("/login"))
     }
 
     render() {
         const formSchema = {
             type: 'object',
-            required: ['email', 'password'],
+            required: ['firstName', 'lastName',  'email', 'password', 'grade', 'username'],
             properties: {
+                firstName: {
+                    type: 'string',
+                    title: 'First Name'
+                },
+                lastName: {
+                    type: 'string',
+                    title: 'Last Name'
+                },
                 email: {
                     type: 'string',
                     title: 'Email',
@@ -27,13 +35,24 @@ class Register extends React.PureComponent {
                 },
                 password: {
                     type: 'string',
-                    title: 'Password'
+                    title: 'Password',
+                    minLength: 8
+                },
+                grade: {
+                    type: 'integer',
+                    title: 'Grade'
+                },
+                username: {
+                    type: 'string',
+                    title: 'Username',
+                    minLength: 3
                 }
             }
         }
 
         const uiSchema = {
-            password: { 'ui:widget': 'password' }
+            password: { 'ui:widget': 'password' },
+            grade: {'ui:widget': 'updown'}
         }
 
 
@@ -42,7 +61,7 @@ class Register extends React.PureComponent {
                 <div className="container">
                     <Panel bsStyle="info">
                         <Panel.Heading>
-                            <Panel.Title componentClass="h1">Login</Panel.Title>
+                            <Panel.Title componentClass="h1">Register</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body>
                             <Form className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2"
