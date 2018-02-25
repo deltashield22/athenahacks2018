@@ -18,8 +18,16 @@ class Login extends React.PureComponent {
     render() {
         const formSchema = {
             type: 'object',
-            required: ['email', 'password'],
+            required: ['firstName', 'lastName',  'email', 'password', 'grade', 'username'],
             properties: {
+                firstName: {
+                    type: 'string',
+                    title: 'First Name'
+                },
+                lastName: {
+                    type: 'string',
+                    title: 'Last Name'
+                },
                 email: {
                     type: 'string',
                     title: 'Email',
@@ -27,7 +35,16 @@ class Login extends React.PureComponent {
                 },
                 password: {
                     type: 'string',
-                    title: 'Password'
+                    title: 'Password',
+                    minLength: 8
+                },
+                grade: {
+                    type: 'integer',
+                    title: 'Grade'
+                },
+                username: {
+                    type: 'string',
+                    title: 'Username'
                 }
             }
         }
