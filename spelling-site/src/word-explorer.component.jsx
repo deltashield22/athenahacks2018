@@ -23,7 +23,7 @@ class WordExplorer extends React.PureComponent {
                     </div>
 
                     <div className="row">
-                        <Button type="button" bsSize="lg">
+                        <Button type="button" bsStyle="info" bsSize="lg">
                             <Glyphicon glyph="volume-up" />
                         </Button>
                     </div>
@@ -33,7 +33,7 @@ class WordExplorer extends React.PureComponent {
                             <div className="input-group">
                                 <input style={{marginTop: 20}} type="text" className="form-control" placeholder="Missip..."/>
                                     <span className="input-group-btn">
-                                        <Button style={{marginTop: 20}} type="button">Go!</Button>
+                                        <Button style={{marginTop: 20}} type="button" bsStyle="success">Go!</Button>
                                     </span>
                             </div>
                         </div>
