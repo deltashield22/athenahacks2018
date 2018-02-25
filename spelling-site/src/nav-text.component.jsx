@@ -24,3 +24,5 @@ class NavText extends React.PureComponent {
         // );
     }
 }
+
+export default NavText;

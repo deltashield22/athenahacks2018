@@ -22,13 +22,64 @@
   font-size: large;
 }
 
+.container {
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 3px 2px black;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 675px) {
+  /* For mobile phones: */
+  .progress-circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-25%, -25%); */
+    height: 18%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 630px) {
+  /* For tablets: */
+  .progress-circle {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    /* transform: translate(-25%, -25%); */
+    height: 18%;
+  }
+
+}
+
+@media only screen and (min-width: 920px) {
+  /* For desktop: */
+  .progress-circle {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    /* transform: translate(-25%, -25%); */
+    height: 20%;
+  }
+}
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
 }

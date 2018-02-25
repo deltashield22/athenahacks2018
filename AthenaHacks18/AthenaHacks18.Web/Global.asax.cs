@@ -11,7 +11,18 @@ namespace AthenaHacks18.Web
     {
         protected void Application_Start()
         {
+            UnityConfig.RegisterComponents();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+        }
+
+        protected void Application_BeginRequest()
+        {
+            if (Request.Headers.AllKeys.Contains("Origin") && Request.HttpMethod == "OPTIONS")
+            {
+                Response.StatusCode = 200;
+                Response.End();
+                Response.Flush();
+            }
         }
     }
 }

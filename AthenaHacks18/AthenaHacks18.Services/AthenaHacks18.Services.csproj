@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,10 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAuthenticationService.cs" />
+    <Compile Include="IdNotFoundException.cs" />
+    <Compile Include="Interfaces\IStudentsService.cs" />
+    <Compile Include="Interfaces\IWordsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\IIdentityExtensions.cs" />
+    <Compile Include="WordsService.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\AthenaHacks18.Data\AthenaHacks18.Data.csproj">
+      <Project>{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}</Project>
+      <Name>AthenaHacks18.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AthenaHacks18.Models\AthenaHacks18.Models.csproj">
+      <Project>{1AEA8D67-57B9-4A72-B8A2-83F92FB22018}</Project>
+      <Name>AthenaHacks18.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
