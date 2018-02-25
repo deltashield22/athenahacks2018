@@ -23,15 +23,15 @@ class App extends Component {
                 <Navbar.Toggle/>
               </Navbar.Header>
               <Navbar.Collapse>
-              <Nav>
+              <Nav pullRight>
                 <NavItem eventKey={1} href='/word-explorer'>
                   Word Explorer
                 </NavItem>
                 {/* <NavDropdown eventKey={1} title="Word Explorer" href="/word-explorer">
                 </NavDropdown> */}
-                {/* <Navbar.Text>
-                  <NavText/>
-                </Navbar.Text> */}
+                <Navbar.Text>
+                  <a href="/login">Login</a>
+                </Navbar.Text>
               </Nav>
               </Navbar.Collapse>
             </Navbar>
