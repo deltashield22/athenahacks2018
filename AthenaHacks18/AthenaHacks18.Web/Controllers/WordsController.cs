@@ -45,10 +45,10 @@ namespace AthenaHacks18.Web.Controllers
         [HttpGet, Route("api/words/{grade:int}")]
         public HttpResponseMessage GetByGrade(int grade)
         {
-            Word word = wordsService.GetByGrade(grade);
+            List<Word> words = wordsService.GetByGrade(grade);
 
-            ItemResponse<Word> response = new ItemResponse<Word>();
-            response.Item = word;
+            ItemsResponse<Word> response = new ItemsResponse<Word>();
+            response.Items = words;
 
             return Request.CreateResponse(HttpStatusCode.OK, response);
         }

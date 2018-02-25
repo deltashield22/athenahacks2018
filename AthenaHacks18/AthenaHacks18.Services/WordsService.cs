@@ -82,9 +82,9 @@ namespace AthenaHacks18.Services
             return word;
         }
 
-        public Word GetByGrade(int grade)
+        public List<Word> GetByGrade(int grade)
         {
-            Word word = null;
+            List<Word> words = null;
 
             dataProvider.ExecuteCmd(
                 "words_getbygrade",
@@ -95,7 +95,7 @@ namespace AthenaHacks18.Services
                 delegate(IDataReader reader, short resultSetIndex)
                 {
                     int i = 0;
-                    word = new Word();
+                    Word word = new Word();
                     word.WordName = reader.GetString(i++);
                     word.GradeLevel = reader.GetInt32(i++);
                     word.PartsOfSpeech = reader.GetString(i++);
@@ -103,9 +103,16 @@ namespace AthenaHacks18.Services
                     word.DateModified = reader.GetDateTime(i++);
                     word.Definition = reader.GetSafeString(i++);
                     word.Example = reader.GetSafeString(i++);
+
+                    if(words == null)
+                    {
+                        words = new List<Word>();
+                    }
+
+                    words.Add(word);
                 });
 
-            return word;
+            return words;
         }
 
 

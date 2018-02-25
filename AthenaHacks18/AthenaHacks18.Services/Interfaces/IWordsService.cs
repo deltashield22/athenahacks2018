@@ -8,7 +8,7 @@ namespace AthenaHacks18.Services
     {
         void Create(WordCreateUpdateRequest req);
         List<Word> GetAll();
-        Word GetByGrade(int grade);
+        List<Word> GetByGrade(int grade);
         Word GetByWord(string wordStr);
         void Update(WordCreateUpdateRequest req);
     }

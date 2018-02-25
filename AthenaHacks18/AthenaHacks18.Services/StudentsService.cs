@@ -11,7 +11,7 @@ using AthenaHacks18.Data.Providers;
 
 namespace AthenaHacks18.Services
 {
-    public class StudentsService
+    public class StudentsService : IStudentsService
     {
         readonly IDataProvider dataProvider;
         private readonly object BCr;
