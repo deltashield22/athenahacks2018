@@ -13,7 +13,7 @@ using System.Web.ModelBinding;
 
 namespace AthenaHacks18.Services
 {
-    public class WordsService
+    public class WordsService : IWordsService
     {
         readonly IDataProvider dataProvider;
 
@@ -136,5 +136,6 @@ namespace AthenaHacks18.Services
                     parameter.AddWithValue("@examples", req.Example);
                 });
         }
+        
     }
 }
