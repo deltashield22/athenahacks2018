@@ -31,6 +31,7 @@ class App extends Component {
                 </NavDropdown> */}
                 <Navbar.Text>
                   <a href="/login">Login</a>
+                  Welcome, <a href="/dashboard">Tom</a>
                 </Navbar.Text>
               </Nav>
               </Navbar.Collapse>
