@@ -21,10 +21,8 @@ class WordExplorer extends React.PureComponent {
     }
 
     componentDidMount() {
-        debugger;
         wordService.getListByGrade(this.state.grade)
             .then(words => {
-                debugger;
                 this.setState({ wordList: words });
                 this.setState({ currentWord: words[this.props.wordIndex] })
             })
@@ -61,7 +59,6 @@ class WordExplorer extends React.PureComponent {
     }
 
     render() {
-        debugger;
         let alert = "";
         if (this.state.showFailure) {
             return (
