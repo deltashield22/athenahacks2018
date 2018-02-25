@@ -15,26 +15,30 @@ class WordExplorer extends React.PureComponent {
     render() {
         return (
             <section>
-                <div className="container">
+                <div className="container align-items-center">
                     <div className="row">
-                        <div style={{textAlign: 'left'}} className="col-lg-4">
+                        <div style={{ textAlign: 'left' }} className="col-lg-4">
                             <h1>Question 4</h1>
                         </div>
                     </div>
 
-                    <div className="row">
-                        <Button type="button" bsStyle="info" bsSize="lg">
-                            <Glyphicon glyph="volume-up" />
-                        </Button>
-                    </div>
+                    <div className="page-component">
+                        <div className="row">
+                            <div className="col-md-2 col-md-offset-5">
+                                <Button type="button" bsStyle="info" bsSize="lg" block>
+                                    <Glyphicon glyph="volume-up" />
+                                </Button>
+                            </div>
+                        </div>
 
-                    <div className="row">
-                        <div className="col-lg-7">
-                            <div className="input-group">
-                                <input style={{marginTop: 20}} type="text" className="form-control" placeholder="Missip..."/>
-                                    <span className="input-group-btn">
-                                        <Button style={{marginTop: 20}} type="button" bsStyle="success">Go!</Button>
-                                    </span>
+                        <div className="row">
+                            <div className="col-md-6 col-md-offset-3">
+                                <div className="form-group">
+                                    <input style={{ marginTop: 20 }} type="text" className="form-control input-lg" placeholder="Missip..." />
+                                    <div className="col-md-6 col-md-offset-3">
+                                        <Button style={{ marginTop: 20 }} type="button" bsStyle="success" bsSize="large" block>Spell!</Button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

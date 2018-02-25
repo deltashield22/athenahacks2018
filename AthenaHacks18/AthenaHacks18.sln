@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaHacks18.Models", "Ath
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaHacks18.Data", "AthenaHacks18.Data\AthenaHacks18.Data.csproj", "{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaHacks18.Web.Core", "StrokeWars.Web.Core\AthenaHacks18.Web.Core.csproj", "{1AC3BA8C-33B1-4A07-9A57-FAC609DFB2E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaHacks18.ReadOxfordDictionary", "AthenaHacks18.ReadOxfordDictionary\AthenaHacks18.ReadOxfordDictionary.csproj", "{55CDDD76-25C5-4660-91E5-463D30709488}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC3BA8C-33B1-4A07-9A57-FAC609DFB2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC3BA8C-33B1-4A07-9A57-FAC609DFB2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC3BA8C-33B1-4A07-9A57-FAC609DFB2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC3BA8C-33B1-4A07-9A57-FAC609DFB2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CDDD76-25C5-4660-91E5-463D30709488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CDDD76-25C5-4660-91E5-463D30709488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CDDD76-25C5-4660-91E5-463D30709488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CDDD76-25C5-4660-91E5-463D30709488}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
