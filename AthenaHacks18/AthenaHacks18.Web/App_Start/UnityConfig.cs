@@ -31,8 +31,8 @@ namespace AthenaHacks18.Web
             container.RegisterType<IDataProvider, SqlDataProvider>(
                new InjectionConstructor(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString));
 
-            container.RegisterType<IPrincipal>(new TransientLifetimeManager(),
-                     new InjectionFactory(con => HttpContext.Current.User));
+            //container.RegisterType<IPrincipal>(new TransientLifetimeManager(),
+            //         new InjectionFactory(con => HttpContext.Current.User));
 
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);

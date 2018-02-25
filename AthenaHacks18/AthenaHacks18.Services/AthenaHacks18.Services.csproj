@@ -69,10 +69,6 @@
       <Project>{1aea8d67-57b9-4a72-b8a2-83f92fb22018}</Project>
       <Name>AthenaHacks18.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AthenaHacks18.Web\AthenaHacks18.Web.csproj">
-      <Project>{1ffac019-baaf-44b4-9fd5-bb656f2ec683}</Project>
-      <Name>AthenaHacks18.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
