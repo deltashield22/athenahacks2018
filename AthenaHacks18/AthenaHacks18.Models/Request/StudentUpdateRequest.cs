@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AthenaHacks18.Models.Request
 {
-    class StudentUpdateRequest : StudentCreateRequest
+    public class StudentUpdateRequest : StudentCreateRequest
     {
         [Required]
         public int Id { get; set; }
