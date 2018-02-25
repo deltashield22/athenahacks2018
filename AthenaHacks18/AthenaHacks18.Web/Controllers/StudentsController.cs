@@ -15,83 +15,83 @@ namespace AthenaHacks18.Web.Controllers
     [RoutePrefix("api/students")]
     public class StudentsController : ApiController
     {
-        readonly IStudentsService studentsService;
+        //readonly IStudentsService studentsService;
 
-        public StudentsController(IStudentsService studentsService)
-        {
-            this.studentsService = studentsService;
-        }
+        //public StudentsController(IStudentsService studentsService)
+        //{
+        //    this.studentsService = studentsService;
+        //}
 
-        //Insert
-        [HttpPost, Route("")]
-        public HttpResponseMessage Insert(StudentCreateRequest req)
-        {
+        ////Insert
+        //[HttpPost, Route("")]
+        //public HttpResponseMessage Insert(StudentCreateRequest req)
+        //{
 
-            if (!ModelState.IsValid)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-            }
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+        //    }
 
-            int newId = studentsService.Insert(req);
-            ItemResponse<int> response = new ItemResponse<int>();
-            response.Item = newId;
-            return Request.CreateResponse(HttpStatusCode.Created, response); 
-        }
+        //    int newId = studentsService.Insert(req);
+        //    ItemResponse<int> response = new ItemResponse<int>();
+        //    response.Item = newId;
+        //    return Request.CreateResponse(HttpStatusCode.Created, response); 
+        //}
         
-        // GET All
-        [HttpGet, Route("")]
-        public HttpResponseMessage GetAll()
-        {
-            List<Student> student = studentsService.GetAll();
-            ItemsResponse<Student> response = new ItemsResponse<Student>();
-            response.Items = student;
-            return Request.CreateResponse(HttpStatusCode.OK, response);
-        }
+        //// GET All
+        //[HttpGet, Route("")]
+        //public HttpResponseMessage GetAll()
+        //{
+        //    List<Student> students = studentsService.GetAll();
+        //    ItemsResponse<Student> response = new ItemsResponse<Student>();
+        //    response.Items = students;
+        //    return Request.CreateResponse(HttpStatusCode.OK, response);
+        //}
 
-        // GET By Id
-        [HttpGet, Route("student/{id}")]
-        public HttpResponseMessage GetById(int id)
-        {
-            Student student = studentsService.GetById(id);
-            ItemResponse<Student> response = new ItemResponse<Student>();
-            response.Item = student;
-            return Request.CreateResponse(HttpStatusCode.OK, response);
-        }
+        //// GET By Id
+        //[HttpGet, Route("{id}")]
+        //public HttpResponseMessage GetById(int id)
+        //{
+        //    Student student = studentsService.GetById(id);
+        //    ItemResponse<Student> response = new ItemResponse<Student>();
+        //    response.Item = student;
+        //    return Request.CreateResponse(HttpStatusCode.OK, response);
+        //}
 
 
-        // PUT 
-        [HttpPut, Route("{id}")]
-        public HttpResponseMessage Update(int id, StudentUpdateRequest req)
-        {
-            if (!ModelState.IsValid)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-            }
+        //// PUT 
+        //[HttpPut, Route("{id}")]
+        //public HttpResponseMessage Update(int id, StudentUpdateRequest req)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+        //    }
 
-            studentsService.Update(id, req);
-            SuccessResponse response = new SuccessResponse();
-            return Request.CreateResponse(HttpStatusCode.OK, response);
-        }
+        //    studentsService.Update(id, req);
+            
+        //    return Request.CreateResponse(HttpStatusCode.OK, new SuccessResponse());
+        //}
 
-        // DELETE
-        [HttpDelete, Route("{id}")]
-        public HttpResponseMessage Delete(int id)
-        {
-            if (!ModelState.IsValid)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.Conflict, ModelState);
-            }
-            try
-            {
-                studentsService.Delete(id);
-            }
-            catch (IdNotFoundException ex)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
-            }
+        //// DELETE
+        //[HttpDelete, Route("{id}")]
+        //public HttpResponseMessage Delete(int id)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.Conflict, ModelState);
+        //    }
+        //    try
+        //    {
+        //        studentsService.Delete(id);
+        //    }
+        //    catch (IdNotFoundException ex)
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+        //    }
 
-            SuccessResponse response = new SuccessResponse();
-            return Request.CreateResponse(HttpStatusCode.OK, response);
-        }
+           
+        //    return Request.CreateResponse(HttpStatusCode.OK, new SuccessResponse());
+        //}
     }
 }

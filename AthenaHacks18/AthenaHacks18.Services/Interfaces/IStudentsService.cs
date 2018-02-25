@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AthenaHacks18.Services.Interfaces
 {
-    interface IStudentsService
+    public interface IStudentsService
     {
     }
 }

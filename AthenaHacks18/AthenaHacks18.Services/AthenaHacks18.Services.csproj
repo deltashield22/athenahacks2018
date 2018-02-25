@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdNotFoundException.cs" />
+    <Compile Include="Interfaces\IStudentsService.cs" />
     <Compile Include="Interfaces\IWordsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WordsService.cs" />
