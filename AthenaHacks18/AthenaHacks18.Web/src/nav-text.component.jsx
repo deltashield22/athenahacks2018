@@ -18,15 +18,7 @@ class NavText extends React.PureComponent {
     }
 
     render() {
-        // let navText = user.id ? 
-        // <React.Fragment>
-        //     Welcome back, <a href="/dashboard">{this.state.user.name}</a>
-        // </React.Fragment> 
-        // : 
-        // <React.Fragment> 
-        //     <a href="/login">Login</a>
-        // </React.Fragment> 
-
+        // let navText = user.id ? <React.Fragment>Welcome back, {user.name}</React.Fragment> : Login;
         // return(
         //     {navText}
         // );
