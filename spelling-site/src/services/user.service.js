@@ -5,7 +5,7 @@ const userService = {
         const config = {
             method: 'GET'
         }
-        return axios(`/api/students/${studentsId}`, config)
+        return axios(`http://localhost:53577/api/students/${studentsId}`, config)
             .then(responseSuccessHandler)
             .catch(responseErrorHandler)
     }

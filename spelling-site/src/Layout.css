@@ -38,14 +38,14 @@
 
 
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 640px) {
   /* For mobile phones: */
   .progress-circle {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     /* transform: translate(-25%, -25%); */
-    height: 80%;
+    width: 50%;
   }
 
   .banner {
@@ -54,14 +54,14 @@
 
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 640px) {
   /* For tablets: */
   .progress-circle {
     position: absolute;
     top: 25%;
     left: 15%;
     /* transform: translate(-25%, -25%); */
-    height: 80%;
+    height: 15%;
   }
 
 }
@@ -73,7 +73,7 @@
     top: 30%;
     left: 20%;
     /* transform: translate(-25%, -25%); */
-    height: 80%;
+    height: 20%;
   }
 }
 

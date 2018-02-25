@@ -39,7 +39,7 @@ class App extends Component {
 
             <Route exact path='/main' component={Main} />
             <Route exact path='/dashboard' component={UserDash} />
-            <Route exact path='/word-explorer' component={WordExplorer} />
+            <Route exact path='/word-explorer/:grade/:wordIndex' component={WordExplorer} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
 

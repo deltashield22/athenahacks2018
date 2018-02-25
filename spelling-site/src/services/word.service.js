@@ -5,7 +5,7 @@ const wordService = {
         const config = {
             method: 'GET'
         }
-        return axios(`/api/words/${grade}`, config)
+        return axios(`http://localhost:53577/api/words/${grade}`, config)
             .then(responseSuccessHandler)
             .catch(responseErrorHandler)
     }

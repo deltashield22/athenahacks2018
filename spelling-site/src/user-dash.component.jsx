@@ -34,10 +34,7 @@ class UserDash extends React.PureComponent {
             <React.Fragment>
             <header>
                 <Image className="banner" responsive src={banner}/>
-                <div className="progress-circle">
-                    <Circle percent={this.state.percent} strokeWidth="6" strokeColor="#5cb85c" />
-                    <Label>Score</Label>
-                </div>
+                    <Circle className="progress-circle" percent={this.state.percent} strokeWidth="6" strokeColor="#5cb85c" />
             </header>
             <section>
 
