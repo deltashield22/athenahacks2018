@@ -23,7 +23,7 @@ namespace AthenaHacks18.Web
             container.RegisterType<IWordsService, WordsService>(new ContainerControlledLifetimeManager());
             container.RegisterType<IAuthenticationService, OwinAuthenticationService>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
-            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+            DependencyResolver.SetResolver(new Unity.Mvc5.UnityDependencyResolver(container));
         }
     }
 }
