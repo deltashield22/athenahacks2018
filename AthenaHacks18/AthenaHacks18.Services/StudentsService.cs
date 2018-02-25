@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AthenaHacks18.Models.Domain;
 using AthenaHacks18.Models.Request;
-using AthenaHacks2018.Data.Providers;
+using AthenaHacks18.Data.Providers;
 
 namespace AthenaHacks18.Services
 {
