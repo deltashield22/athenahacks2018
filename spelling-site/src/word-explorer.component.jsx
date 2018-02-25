@@ -11,9 +11,9 @@ class WordExplorer extends React.PureComponent {
             answer: null,
             play: false,
             grade: 2,
-            wordIndex: this.props.wordIndex,
+            wordIndex: 0,
             showSuccess: false,
-            showFailure: false,
+            showFailure: false
         }
         //number of questions in round passed in as prop
         this.onEnd = this.onEnd.bind(this);
@@ -29,8 +29,6 @@ class WordExplorer extends React.PureComponent {
                 this.setState({ currentWord: words[this.props.wordIndex] })
             })
             .catch(err => console.log(err));
-        //serviceCall getUserInfo(score, etc.)
-        //serviceCall getWordInfo
     }
 
     onChange(e) {
@@ -63,6 +61,7 @@ class WordExplorer extends React.PureComponent {
     }
 
     render() {
+        debugger;
         let alert = "";
         if (this.state.showFailure) {
             return (

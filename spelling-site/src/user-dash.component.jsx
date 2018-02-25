@@ -42,7 +42,7 @@ class UserDash extends React.PureComponent {
                     <h2>Start Spelling!</h2>
                     <ListGroup>
                         <ListGroupItem bsStyle="info">2nd Grade</ListGroupItem>
-                        <ListGroupItem>2nd Grade</ListGroupItem>
+                        <ListGroupItem>3nd Grade</ListGroupItem>
                     </ListGroup>
                 </div>
             </section>
