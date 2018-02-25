@@ -1,5 +1,5 @@
 import React from 'react'
-import {Image} from 'react-bootstrap'
+import {Image, ListGroup, ListGroupItem, Button, Label} from 'react-bootstrap'
 import banner from './bee-banner.jpg'
 import {Circle} from 'rc-progress'
 
@@ -34,10 +34,20 @@ class UserDash extends React.PureComponent {
             <React.Fragment>
             <header>
                 <Image className="banner" responsive src={banner}/>
-                <Circle className="progress-circle" percent={this.state.percent} strokeWidth="6" strokeColor="#5cb85c" />
+                <div className="progress-circle">
+                    <Circle percent={this.state.percent} strokeWidth="6" strokeColor="#5cb85c" />
+                    <Label>Score</Label>
+                </div>
             </header>
             <section>
 
+                <div className="row" style={{padding: 30}}>
+                    <h2>Start Spelling!</h2>
+                    <ListGroup>
+                        <ListGroupItem bsStyle="info">2nd Grade</ListGroupItem>
+                        <ListGroupItem>2nd Grade</ListGroupItem>
+                    </ListGroup>
+                </div>
             </section>
             </React.Fragment>
         )
