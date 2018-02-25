@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { Navbar, Nav, NavItem, Image } from 'react-bootstrap'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { Navbar, Nav, NavItem} from 'react-bootstrap'
+import { Route, Link } from 'react-router-dom'
 import WordExplorer from './word-explorer.component.jsx'
 // import NavText from './nav-text.component.jsx'
 import Login from './login.component.jsx'
