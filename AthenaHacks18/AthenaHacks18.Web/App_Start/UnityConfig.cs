@@ -1,15 +1,12 @@
+using AthenaHacks18.Data;
+using AthenaHacks18.Data.Providers;
 using AthenaHacks18.Services;
 using AthenaHacks18.Web.Core.Services;
-using AthenaHacks2018.Data;
-using AthenaHacks2018.Data.Providers;
 using System.Configuration;
-using System.Security.Principal;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using Unity;
 using Unity.Injection;
-using Unity.Lifetime;
 using Unity.WebApi;
 
 

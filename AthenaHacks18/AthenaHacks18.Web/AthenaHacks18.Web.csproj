@@ -201,6 +201,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AthenaHacks18.Data\AthenaHacks18.Data.csproj">
+      <Project>{601FFDBE-C66B-49F3-A9F0-6AEBCDCBA972}</Project>
+      <Name>AthenaHacks18.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AthenaHacks18.Models\AthenaHacks18.Models.csproj">
       <Project>{1AEA8D67-57B9-4A72-B8A2-83F92FB22018}</Project>
       <Name>AthenaHacks18.Models</Name>

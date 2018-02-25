@@ -1,7 +1,7 @@
 ﻿using AthenaHacks18.Models.Domain;
 using AthenaHacks18.Models.Request;
-using AthenaHacks2018.Data;
-using AthenaHacks2018.Data.Providers;
+using AthenaHacks18.Data;
+using AthenaHacks18.Data.Providers;
 using System;
 using System.Collections.Generic;
 using System.Data;
