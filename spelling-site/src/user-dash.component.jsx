@@ -1,5 +1,7 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
+import banner from './bee-banner.jpg'
+import {Circle} from 'rc-progress'
 
 
 class UserDash extends React.PureComponent {
@@ -11,7 +13,8 @@ class UserDash extends React.PureComponent {
         return(
             <React.Fragment>
             <header>
-                <Image responsive src="./spellingbees.jpg"/>
+                <Image className="banner" responsive src={banner}/>
+                <Circle className="progress-circle" percent="86" strokeWidth="4" strokeColor="#D3D3D3" />
             </header>
             <section>
 

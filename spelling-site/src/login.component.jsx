@@ -5,6 +5,14 @@ import Form from 'react-jsonschema-form'
 class Login extends React.PureComponent {
     constructor(props) {
         super(props);
+
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    onSubmit(e) {
+        let formData = e.formData;
+        //service call to send formData to database
+        //.then(() => location.href("/dashboard"))
     }
 
     render() {
